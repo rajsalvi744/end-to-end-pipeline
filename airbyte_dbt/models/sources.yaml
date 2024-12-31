@@ -1,0 +1,36 @@
+version: '2'
+
+sources:
+  - name: sales
+    description: Raw data from destination Postgres Database
+    database: sales
+    schema: public
+    tables:
+      - name: products
+        description: "Products Information"
+      - name: region
+        description: "Regions"
+      - name: reseller
+        description: "Reseller's Demographics"
+      - name: sales
+        description: "Sales Transactions Information"
+      - name: salesperson
+        description: "Salesperson's Demographics"
+      - name: salespersonregion
+        description: "Salesperson and their respective regions"
+      - name: targets
+        description: "Salesperson's Monthly Targets"
+      - name: products_scd
+        description: "Products Information CDC"
+      - name: region_scd
+        description: "Regions CDC"
+      - name: reseller_scd
+        description: "Reseller's Demographics CDC"
+      - name: sales_scd
+        description: "Sales Transactions Information CDC"
+      - name: salesperson_scd
+        description: "Salesperson's Demographics CDC"
+      - name: salespersonregion_scd
+        description: "Salesperson and their respective regions CDC"
+      - name: targets_scd
+        description: "Salesperson's Monthly Targets CDC"

@@ -1,0 +1,94 @@
+version: '2'
+
+staging:
+  - name: products
+    description: Model containing product information
+    columns:
+      - name: ProductKey
+        description:
+      - name: Product
+        description:
+      - name: Standard-Cost
+        description:
+      - name: Category
+        description:
+      - name: Subcategory
+        description:
+
+  - name: region
+    columns:
+      - name: SalesTerritoryKey
+        description:
+      - name: Region
+        description:
+      - name: Country
+        description:
+      - name: Group
+        description:
+
+  - name: reseller
+    columns:
+      - name: ResellerKey
+        description:
+      - name: Business-Type
+        description:
+      - name: Reseller
+        description:
+      - name: City
+        description:
+      - name: State-Province
+        description:
+      - name: Country-Region
+        description:
+
+  - name: sales
+    columns:
+      - name: SalesOrderNumber
+        description:
+      - name: OrderDate
+        description:
+      - name: ProductKey
+        description:
+      - name: ResellerKey
+        description:
+      - name: EmployeeKey
+        description:
+      - name: SalesTerritoryKey
+        description:
+      - name: Quantity
+        description:
+      - name: Unit-Price
+        description:
+      - name: Sales
+        description:
+      - name: Cost
+        description:
+
+  - name: salesperson
+    columns:
+      - name: EmployeeKey
+        description:
+      - name: EmployeeID
+        description:
+      - name: Salesperson
+        description:
+      - name: Title
+        description:
+      - name: UPN
+        description:
+
+  - name: salesperson_region
+    columns:
+      - name: EmployeeKey
+        description:
+      - name: SalesTerritoryKey
+        description:
+
+  - name: targets
+    columns:
+      - name: EmployeeID
+        description:
+      - name: Target
+        description:
+      - name: TargetMonth
+        description:
